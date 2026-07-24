@@ -1,0 +1,7 @@
+# Linux Security Audit Tool
+#
+# Runtime: standard library only (Python 3.8+). No third-party packages
+# are required to run the audit itself.
+#
+# Optional, for running the test suite with a nicer runner:
+pytest>=7.0

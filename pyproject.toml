@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linux-security-audit"
+version = "1.0.0"
+description = "A dependency-free security posture auditing tool for Linux hosts"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Your Name" }]
+keywords = ["security", "linux", "audit", "hardening", "sysadmin", "devsecops"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Security",
+    "Intended Audience :: System Administrators",
+]
+
+[project.scripts]
+security-audit = "securityaudit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["securityaudit*"]
